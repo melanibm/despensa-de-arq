@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+/*UNICAMENTE EN EL INDEX*/
+body{
+    background-color: #ffffff;
+}
+.menu{
+    background: #1f271b;
+    padding-block: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+footer{
+    background-color: #1f271b;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+.foot{
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px;
+}
+.ul{
+    display: inline-block;
+    margin-inline: 15px;
+}
+.house{
+    color: orange;
+    font-size: 30px;
+}
+.ul a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.ul.active a, .ul a:hover{
+    text-decoration: underline;
+}
+
+/* inicio */
+
+.bienvenidos{
+    font-size: 30px;
+    padding: 50px;
+    margin: 30px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.parrafo{
+    font-size: 15px;
+    padding: 30px;
+    /*agregue texto sin valor, para despues agregar el que va*/
+}
+.inicio1{
+    width: 30%;
+    display: inline-block;
+    padding: 20px;
+    background-color: #540d6e;
+    border-radius: 10px;
+    margin-inline: 1.5%;
+}
+.inicio1_img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.proyectos{
+    width: 25%;
+}
+.logocontacto{
+    width: 300px;
+    margin-top: 30px;
+    display: inline-block;
+}
+.form{
+    display: inline-block;
+}
+
+.cajamayor {
+    display: grid;
+    width: 800px;
+    height: 400px;
+}
+.caja {
+    border: 1px solid rgb(197, 153, 153);
+}
