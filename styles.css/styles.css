@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    
 }
 /*UNICAMENTE EN EL INDEX*/
 body{
-    background-color: #ffffff;
+    background-color:#dfd6a7ff;
 }
 .menu{
-    background: #1f271b;
+    background:  #1f1300ff;
     padding-block: 15px;
     position: fixed;
     width: 100%;
@@ -18,7 +17,7 @@ body{
     z-index: 1;
 }
 footer{
-    background-color: #1f271b;
+    background-color: #1f1300ff;
     padding: 15px;
     text-align: center;
     margin-top: 15px;
@@ -44,33 +43,7 @@ footer{
     text-decoration: underline;
 }
 
-/* inicio */
 
-.bienvenidos{
-    font-size: 30px;
-    padding: 50px;
-    margin: 30px;
-    text-align: center;
-    text-decoration-line: underline;
-}
-.parrafo{
-    font-size: 15px;
-    padding: 30px;
-    /*agregue texto sin valor, para despues agregar el que va*/
-}
-.inicio1{
-    width: 30%;
-    display: inline-block;
-    padding: 20px;
-    background-color: #540d6e;
-    border-radius: 10px;
-    margin-inline: 1.5%;
-}
-.inicio1_img{
-    width: 100%;
-    border-radius: 10px;
-
-}
 .proyectos{
     width: 25%;
 }
@@ -83,11 +56,66 @@ footer{
     display: inline-block;
 }
 
-.cajamayor {
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "caja1 caja1 caja1 caja1"
+    "caja2 caja3 caja4 caja5";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.caja1 {
+    grid-area: caja1;
+    background-color:hsl(50, 47%, 76%) ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.caja2 {
+     grid-area: caja2;
+     background-color: hsl(44, 91%, 66%);
+}
+.caja3 {
+     grid-area: caja3;
+     background-color: hsl(33, 91%, 66%);
+}
+.caja4 {
+     grid-area: caja4;
+     background-color: hsl(49, 43%, 48%);
+}
+.caja5 {
+     grid-area: caja5;
+     background-color:hsl(37, 100%, 6%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .cajamayor {
     display: grid;
     width: 800px;
     height: 400px;
 }
 .caja {
     border: 1px solid rgb(197, 153, 153);
-}
+} */
