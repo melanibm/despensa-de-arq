@@ -6,6 +6,7 @@
 }
 body{
     background-color:#dfd6a7ff;
+    
 }
 
 .menuqs{
@@ -104,19 +105,33 @@ footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
 }
+.contenedor a {
+    text-decoration: none;
+    color: black;
 
+}
+.contenedor a:hover{
+    color: #ffffff;
+}
 .caja {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 
 .caja1 {
     grid-area: caja1;
-    background-color:#dfd5a5 ;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
+    background-image: url(../imagenes/img4.jpeg);
+    object-fit: contain;
+    background-position: center;
+    
+}
+.caja1 a:hover{
+    background-color: #1f1300;
+    color:#ffffff;
 }
 .caja2 {
      grid-area: caja2;
