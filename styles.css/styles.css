@@ -4,7 +4,6 @@
     box-sizing: border-box;
     
 }
-/*UNICAMENTE EN EL INDEX*/
 body{
     background-color:#dfd6a7ff;
 }
@@ -111,11 +110,3 @@ footer{
 
 
 
-/* .cajamayor {
-    display: grid;
-    width: 800px;
-    height: 400px;
-}
-.caja {
-    border: 1px solid rgb(197, 153, 153);
-} */
