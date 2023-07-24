@@ -9,50 +9,38 @@ body{
     
 }
 
-.menuqs{
-    background: #f7cd59;
-    padding-block: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
+
 .mainqs{
     background-color: #f7cd59;
 }
-.menupro{
-    background: #f7b059;
-    padding-block: 15px;
-    position: fixed;
+
+section {
+    display: flex;
     width: 100%;
-    top: 0;
-    z-index: 1;
+    height: 100vh;
 }
-.mainpro{
-    background-color: #f7b059;
+
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
 }
-.menupre{
-    background: #af9c46;
-    padding-block: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
+
 .mainpre {
     background-color: #af9c46;
 }
-.menucon{
-    background: #1f1300;
-    padding-block: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
+
 .maincon{
     background-color: #1f1300;
-}
+} 
 footer{
     background-color: #1f1300ff;
     padding: 15px;
@@ -63,34 +51,6 @@ footer{
     color: #ffffff;
     font-size: 30px;
     padding: 10px;
-}
-.ul{
-    display: inline-block;
-    margin-inline: 15px;
-}
-.house{
-    color: orange;
-    font-size: 30px;
-}
-.ul a{
-    color: #ffffff;
-    text-decoration: none;
-}
-.ul.active a, .ul a:hover{
-    text-decoration: underline;
-}
-
-
-.proyectos{
-    width: 25%;
-}
-.logocontacto{
-    width: 300px;
-    margin-top: 30px;
-    display: inline-block;
-}
-.form{
-    display: inline-block;
 }
 
 .contenedor {
@@ -120,7 +80,6 @@ footer{
     
 }
 
-
 .caja1 {
     grid-area: caja1;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -149,7 +108,32 @@ footer{
      grid-area: caja5;
      background-color:#1f1300;
 }
+@media screen and (max-width: 760px) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "caja1 caja1"
+        "caja2 caja3"
+        "caja4 caja5"
+        ;
+    }
+}
 
+@media screen and (max-width: 480px) {
+
+    .contenedor {
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+    }
+    .caja {
+        flex: 1;
+    }
+    .caja1 {
+        flex: 2;
+    }
+}
 
 
 
