@@ -9,11 +9,6 @@ body{
     
 }
 
-
-.mainqs{
-    background-color: #f7cd59;
-}
-
 section {
     display: flex;
     width: 100%;
@@ -34,13 +29,6 @@ section img:hover {
     filter: contrast(120%);
 }
 
-.mainpre {
-    background-color: #af9c46;
-}
-
-.maincon{
-    background-color: #1f1300;
-} 
 footer{
     background-color: #1f1300ff;
     padding: 15px;
@@ -67,7 +55,7 @@ footer{
 }
 .contenedor a {
     text-decoration: none;
-    color: black;
+    color: rgba(0, 0, 0, 0.877);
 
 }
 .contenedor a:hover{
@@ -89,7 +77,7 @@ footer{
     
 }
 .caja1 a:hover{
-    background-color: #1f1300;
+    background-color: #1f1300b0;
     color:#ffffff;
 }
 .caja2 {
@@ -106,8 +94,33 @@ footer{
 }
 .caja5 {
      grid-area: caja5;
-     background-color:#1f1300;
+     background-color:#1f1300e7;
 }
+.quiensoy {
+    width: 400px;
+    border-radius: 30px;
+    
+}
+.cartita {
+    background-color: #f7cd59;
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 1rem;
+}
+.carta {
+    display:flex;
+    gap: 2rem;
+    
+}
+.nombre {
+    text-align: center;
+    padding: 1rem;
+}
+.parrafo {
+    text-align: center;
+    padding: 1rem;
+}
+
 @media screen and (max-width: 760px) {
     .contenedor {
         grid-template-columns: 1fr 1fr;
@@ -132,6 +145,10 @@ footer{
     }
     .caja1 {
         flex: 2;
+    }
+    .imgpre {
+        height: 30vh;
+
     }
 }
 
