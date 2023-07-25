@@ -31,7 +31,7 @@
                             <a class="nav-link" href="./proyectos.html">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./presupuestos.html">Presupuestos</a>
+                            <a class="nav-link active" aria-current="page" href="./presupuestos.html">Presupuestos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
@@ -42,26 +42,36 @@
             </div>
         </nav>
     </header>
-    <main class="mainpre">
-        <div class="d-flex justify-content-around align-items-center">
-            <div class="d-flex justify-content-center">
-                <img class="imgpre" src="../imagenes/logo.jpeg" alt="">
-            </div>
-
-            <div class="d-flex align-items-start flex-column bd-highlight mb-3" style="height: 200px;">
-                <div class="mb-auto p-2 bd-highlight align-items-sm-stretch"><label for="exampleFormControlInput1"   
-                    class="form-label">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+    <main>
+        <section class="container">
+            <div class="card-group m-5 p-5 gap-2 rounded d-flex justify-content-center">
+                <div class="card mw-100 card text-white bg-dark mb-3">
+                  <img src="../imagenes/casaarriba.jpeg" class="card-img-top" alt="casaarriba">
+                  <div class="card-body">
+                    <h5 class="card-title">Casa Arcos</h5>
+                    <p class="card-text">Proyectos iniciados desde cero.</p>
+                    <a href="./contacto.html" class="btn btn-primary">Más información</a>
+                    
+                  </div>
                 </div>
-                <div class="p-2 bd-highlight align-items-sm-stretch"><label for="exampleFormControlTextarea1" 
-                      class="form-label">Informacion del trabajo que necesita realizar</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <button type="button" class="btn btn-secondary">Enviar</button>
+                <div class="card mw-100 card text-white bg-dark mb-3">
+                  <img src="../imagenes/escaleras.jpeg" class="card-img-top" alt="escaleras">
+                  <div class="card-body">
+                    <h5 class="card-title">Pasillo con escaleras</h5>
+                    <p class="card-text">Proyectos adaptados a modificar pequeños espacios</p>
+                    <a href="./contacto.html" class="btn btn-primary">Más información</a>
+                  </div>
                 </div>
-            </div>
-        </div>
-
+                <div class="card mw-100 card text-white bg-dark mb-3">
+                  <img src="../imagenes/estargris.jpeg" class="card-img-top" alt="estar">
+                  <div class="card-body">
+                    <h5 class="card-title">Sala de estar</h5>
+                    <p class="card-text">Proyectos de espacios en general.</p>
+                    <a href="./contacto.html" class="btn btn-primary">Más información</a>
+                  </div>
+                </div>
+              </div>
+        </section>
     </main>
     <footer>
         <i class="bi bi-facebook foot"></i>
