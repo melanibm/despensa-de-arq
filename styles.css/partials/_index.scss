@@ -1,0 +1,73 @@
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "caja1 caja1 caja1 caja1"
+    "caja2 caja3 caja4 caja5";
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+
+    a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.877);
+
+        &:hover {color: #ffffff; }
+    
+    }
+
+    @for $caja from 1 through 5 {
+        .caja#{$caja} {
+            animation-delay: $caja*.40s;
+         }
+    }
+}
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation:tilt-in-tl .40s cubic-bezier(.25,.46,.45,.94) both;
+    animation:tilt-in-tl .40s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+
+.caja1 {
+    grid-area: caja1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../imagenes/img4.jpeg);
+    object-fit: contain;
+    background-position: center;
+    
+    
+    a:hover{
+        background-color: #1f1300b0;
+        color:#ffffff;
+    }
+}
+
+.caja2 {
+     grid-area: caja2;
+     background-color: #f7cd59;
+     
+}
+.caja3 {
+     grid-area: caja3;
+     background-color: #f7b059;
+     
+}
+.caja4 {
+     grid-area: caja4;
+     background-color: #af9c46;
+     
+}
+.caja5 {
+     grid-area: caja5;
+     background-color:#1f1300e7;
+     
+}
+
+
+ @-webkit-keyframes tilt-in-tl{0%{-webkit-transform:rotateY(35deg) rotateX(20deg) translate(-250px,-250px) skew(12deg,15deg);transform:rotateY(35deg) rotateX(20deg) translate(-250px,-250px) skew(12deg,15deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
+ @keyframes tilt-in-tl{0%{-webkit-transform:rotateY(35deg) rotateX(20deg) translate(-250px,-250px) skew(12deg,15deg);transform:rotateY(35deg) rotateX(20deg) translate(-250px,-250px) skew(12deg,15deg);opacity:0}100%{-webkit-transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);transform:rotateY(0) rotateX(0deg) translate(0,0) skew(0deg,0deg);opacity:1}}
