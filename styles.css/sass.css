@@ -14,8 +14,7 @@ footer {
   text-align: center;
   margin-top: 5px;
 }
-
-.foot {
+footer .foot {
   color: #ffffff;
   font-size: 30px;
   padding: 10px;
@@ -93,6 +92,27 @@ footer {
   grid-area: caja5;
   background-color: rgba(31, 19, 0, 0.9058823529);
 }
+
+@media screen and (max-width: 760px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "caja1 caja1" "caja2 caja3" "caja4 caja5";
+  }
+}
+@media screen and (max-width: 480px) {
+  .contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .caja {
+    flex: 1;
+  }
+  .caja1 {
+    flex: 2;
+  }
+}
 @keyframes tilt-in-tl {
   0% {
     transform: rotateY(35deg) rotateX(20deg) translate(-250px, -250px) skew(12deg, 15deg);
@@ -166,5 +186,21 @@ footer {
 
 .contacto {
   height: 100vh;
+  display: flex;
   justify-content: center;
+}
+
+.contacto-main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+@keyframes color-change-2x {
+  0% {
+    background: #79999b;
+  }
+  100% {
+    background: #d49bf5;
+  }
 }/*# sourceMappingURL=sass.css.map */

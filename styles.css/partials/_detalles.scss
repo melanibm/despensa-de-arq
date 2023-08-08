@@ -1,4 +1,22 @@
 .contacto {
     height: 100vh;
+    display: flex;
     justify-content: center;
 }
+
+.contacto-main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    -webkit-animation:color-change-2x 2s linear infinite alternate both;
+    animation:color-change-2x 2s linear infinite alternate both;
+}
+
+
+
+
+
+
+
+ @-webkit-keyframes color-change-2x{0%{background:#79999b}100%{background:#d49bf5}}
+ @keyframes color-change-2x{0%{background:#79999b}100%{background:#d49bf5}}
