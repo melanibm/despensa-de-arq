@@ -90,7 +90,7 @@ footer .foot {
 
 .caja5 {
   grid-area: caja5;
-  background-color: rgba(31, 19, 0, 0.9058823529);
+  background-color: rgba(197, 132, 27, 0.9058823529);
 }
 
 @media screen and (max-width: 760px) {
@@ -131,9 +131,6 @@ footer .foot {
 .imagen {
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.imagen:hover {
-  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 @keyframes scale-in-center {
   0% {
     transform: scale(0);
@@ -142,14 +139,6 @@ footer .foot {
   100% {
     transform: scale(1);
     opacity: 1;
-  }
-}
-@keyframes scale-down-center {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.5);
   }
 }
 @keyframes tracking-in-expand {
@@ -182,12 +171,6 @@ footer .foot {
   width: 300px;
   opacity: 1;
   filter: contrast(120%);
-}
-
-.contacto {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
 }
 
 .contacto-main {
