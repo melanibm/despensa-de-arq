@@ -1,12 +1,11 @@
 
 .contacto-main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    
     -webkit-animation:color-change-2x 2s linear infinite alternate both;
     animation:color-change-2x 2s linear infinite alternate both;
 }
  @media screen and ( min-width: 760px) {
+   
     .mapa {
         width: 300px;
         height: 500px;

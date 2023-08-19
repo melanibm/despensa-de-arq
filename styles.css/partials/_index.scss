@@ -26,6 +26,7 @@
 }
 .caja {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     -webkit-animation:tilt-in-tl .40s cubic-bezier(.25,.46,.45,.94) both;
