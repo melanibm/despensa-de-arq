@@ -1,12 +1,13 @@
 .texto {
     -webkit-animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
     animation:tracking-in-expand .7s cubic-bezier(.215,.61,.355,1.000) both;
-    animation-delay: .8s;
+    animation-delay: .6s;
 }
 
 .imagen {
     -webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
     animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: .5s;
 
    
 }
